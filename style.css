@@ -1,0 +1,225 @@
+/* General reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS variables for color scheme */
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+
+/* Body styling */
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+    font-size: 16px;
+    background: linear-gradient(90deg, #e2e8ef, #cddfff); /* Corrected background gradient syntax */
+
+}
+
+/* Paragraph styling */
+p {
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+/* Anchor tag styling */
+a {
+    text-decoration: none;
+}
+
+/* Unordered list styling */
+ul {
+    list-style: none;
+}
+
+/* Flex utility class */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Container styling */
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+/* Header styling */
+header {
+    font-family: "Montserrat", sans-serif; /* Use Montserrat for the header */
+    background: linear-gradient(90deg, #fbfdff, #a0c1fb); /* Gradient background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    padding: 7px; /* Increased padding */
+    font-size: 18px; /* Larger font size */
+}
+
+/* Navigation styling */
+nav {
+    padding-block: 5px;
+}
+
+/* Main navigation styling */
+.main-nav {
+    justify-content: space-between;
+}
+
+/* Company logo styling for circular shape */
+.company-logo {
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Ensure width and height are equal for a perfect circle */
+    overflow: hidden; /* Hide overflow to maintain circular shape */
+    border-radius: 50%; /* Make the container circular */
+    display: flex; /* Flex to center the logo */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-color: #fff; /* Optional: Background color for the logo container */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+}
+
+/* Company logo image styling */
+.company-logo img {
+    width: 100%; /* Fill the container */
+    height: 100%; /* Fill the container */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+/* Navigation links styling */
+.nav-links ul {
+    gap: 24px; /* Increased gap for a cleaner look */
+}
+
+/* Hover link styling */
+.hover-link {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease; /* Added transition for smooth zoom effect */
+}
+
+/* Hover and active state styling */
+.hover-link:hover {
+    color: var(--accent-color); /* Accent color on hover */
+    transform: scale(1.1); /* Zoom in effect */
+}
+
+.hover-link:active {
+    color: red; /* Red color on active state */
+}
+
+/* Active navigation item styling */
+.nav-item.active {
+    color: var(--accent-color);
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 40px; /* Increased height */
+    gap: 10px;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 4px 8px; /* Padding for spacing */
+    background-color: white;
+}
+
+/* News input styling */
+.news-input {
+    width: 220px; /* Wider input field */
+    height: 100%;
+    padding-inline: 16px;
+    border-radius: 20px; /* Rounded corners */
+    border: 2px solid #bbd0e2;
+    outline: none; /* No default outline */
+    font-size: 16px; /* Larger font size for readability */
+}
+
+/* Search button styling */
+.search-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.search-button:hover {
+    background-color: var(--accent-color-dark);
+    box-shadow: 0 0 10px rgba(34, 148, 237, 0.4); /* Glow effect on hover */
+}
+
+/* Main content styling */
+main {
+    padding-block: 20px;
+    margin-top: 80px; /* Margin for header */
+}
+
+/* Cards container styling */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+/* Individual card styling */
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 1px 1px 8px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px #d4ecff;
+    background-color: #87d7ffb7;
+    transform: translate(-2px);
+}
+
+/* Card header image styling */
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Card content styling */
+.card-content {
+    padding: 12px;
+}
+
+/* News source styling */
+.news-source {
+    margin-block: 12px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f3faff;
+    padding-block: 12px;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+/* Footer container styling */
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
